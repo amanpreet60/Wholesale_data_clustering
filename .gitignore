@@ -1,0 +1,29 @@
+
+---
+
+### **.gitignore**
+
+```gitignore
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+.venv/
+env/
+venv/
+
+# Jupyter/Quarto
+*.nb.html
+*.nbconvert.ipynb
+*.qmd_cache/
+
+
+# System files
+.DS_Store
+*.log
+*.tmp
+
+# VSCode
+.vscode/
