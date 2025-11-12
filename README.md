@@ -12,7 +12,7 @@ Clustering is suitable for this dataset because the primary objective is to grou
 
 The Agglomerative Hierarchical Clustering analysis on the dataset was conducted using various linkage methods to explore how distance metrics affect cluster formation. The dendrograms for Ward, Complete, and Single linkages reveal distinct hierarchical structures, with Ward linkage producing more balanced, compact clusters, while Single linkage exhibited the typical “chaining” effect, where points are sequentially linked based on minimal pairwise distances rather than overall group cohesion. Although the Single and Complete linkage methods achieved the highest silhouette score of 0.8638 for two clusters, this can be misleading, the high score reflects the presence of very tight subgroups and large inter-cluster gaps, not necessarily meaningful cluster compactness. In practice, such chaining can occur when a few customers have extreme spending behaviors that “bridge” between groups, artificially connecting distant observations into one elongated cluster. In contrast, the Ward linkage with a silhouette score of 0.7925 produced more interpretable clusters by minimizing within-cluster variance. Moreover, increasing the number of clusters to three reduced silhouette scores across all methods, suggesting that the data naturally forms two main customer groups with distinct purchasing patterns
 
-![](plots/hclust.png){fig-align="center" width="100%"}
+![](plots/hclust.png)
 
 ### K-Means Clustering
 
@@ -32,4 +32,4 @@ Compared to Agglomerative Clustering, UMAP captures the overall separation of cu
 
 A comparison with the Channel variable shows that Cluster 0 mostly contains Channel 1 customers (248 out of 256) and Cluster 1 mostly contains Channel 2 customers (134 out of 184), suggesting that UMAP clusters roughly correspond to the Horeca vs. Retail segmentation while still capturing some cross-channel variability.
 
-![](plots/umap.png){fig-align="center" width="40%"}
+![](plots/umap.png)
